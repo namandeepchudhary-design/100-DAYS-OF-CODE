@@ -1,4 +1,4 @@
-//Write a program to find the LCM of two numbers.
+//Write a program to find the HCF (GCD) of two numbers.
 #include<stdio.h>
 int main()
 {
@@ -15,6 +15,6 @@ int main()
         b = a % b;
         a = temp;
     }
-    printf("The LCM  of %d and %d is: %d\n", c,d, (c*d)/a);
+    printf("The HCF (GCD) of %d and %d is: %d\n", c,d, a);
         return 0;
 }

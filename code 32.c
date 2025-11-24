@@ -1,20 +1,15 @@
-//Write a program to check if a number is a palindrome.
-#include <stdio.h>
-int main() {
-    int num, reversed = 0,a;
-    printf("Enter Number ");
-    scanf("%d", &num);
-    a=num;
-    while (num != 0) 
+//Write a program to print all factors of a given number.
+#include<stdio.h>
+int main()
+{
+    int num1,num2;
+    printf("ENTER NUMBER 1\n");
+    scanf("%d",&num1);
+    printf("FACTORS OF %d ARE =",num1);
+    for (int i=1;i<=num1;i++)
     {
-        int digit = num % 10;
-        reversed = reversed * 10 + digit;
-        num /= 10;
+        if (num1%i==0)
+            printf("  %d",i);
     }
-    if (a==reversed)
-        printf("NUMBER IS PALINDROME");
-    else
-        printf("NUMBER IS NOT PALINDROME");
-
     return 0;
 }
